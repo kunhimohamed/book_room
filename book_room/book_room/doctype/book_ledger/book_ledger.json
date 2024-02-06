@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-06 07:19:30.086807",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "shelf",
+  "posting_date",
+  "posting_time",
+  "column_break_ooqkm",
+  "voucher_type",
+  "voucher_no",
+  "qty_change",
+  "qty_after_transaction"
+ ],
+ "fields": [
+  {
+   "fieldname": "shelf",
+   "fieldtype": "Link",
+   "label": "Shelf",
+   "options": "Shelf"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "column_break_ooqkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Link",
+   "label": "Voucher Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "qty_change",
+   "fieldtype": "Float",
+   "label": "Qty Change"
+  },
+  {
+   "fieldname": "qty_after_transaction",
+   "fieldtype": "Float",
+   "label": "Qty After Transaction"
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Dynamic Link",
+   "label": "Voucher No",
+   "options": "voucher_type"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-06 08:26:07.759889",
+ "modified_by": "Administrator",
+ "module": "Book Room",
+ "name": "Book Ledger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
