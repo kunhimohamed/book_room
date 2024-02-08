@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "shelf_name",
+  "office",
   "lft",
   "rgt",
   "is_group",
@@ -57,12 +58,19 @@
    "label": "Shelf Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Link",
+   "label": "Office",
+   "options": "Office",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2024-02-06 08:35:56.478331",
+ "modified": "2024-02-07 00:07:03.981450",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Shelf",

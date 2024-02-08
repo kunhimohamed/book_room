@@ -1,27 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-02-06 07:24:21.712501",
+ "creation": "2024-02-06 08:00:55.142151",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test"
+  "item",
+  "actual_qty",
+  "available_qty",
+  "shelf"
  ],
  "fields": [
   {
-   "fieldname": "test",
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_qty",
+   "fieldtype": "Float",
+   "label": "Available Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item",
    "fieldtype": "Data",
-   "label": "Test"
+   "label": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shelf",
+   "fieldtype": "Link",
+   "label": "Shelf",
+   "options": "Shelf"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 07:24:21.712501",
+ "modified": "2024-02-07 02:32:36.147088",
  "modified_by": "Administrator",
  "module": "Book Room",
- "name": "Book Store Update",
+ "name": "Store",
  "owner": "Administrator",
  "permissions": [
   {

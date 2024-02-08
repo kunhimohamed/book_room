@@ -1,13 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:account_name",
  "creation": "2024-02-06 07:29:20.522090",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test",
+  "account_name",
+  "office",
   "lft",
   "rgt",
   "is_group",
@@ -15,11 +17,6 @@
   "parent_account"
  ],
  "fields": [
-  {
-   "fieldname": "test",
-   "fieldtype": "Data",
-   "label": "Test"
-  },
   {
    "fieldname": "lft",
    "fieldtype": "Int",
@@ -37,6 +34,7 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
@@ -52,15 +50,32 @@
    "fieldtype": "Link",
    "label": "Parent Account",
    "options": "Account"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Office",
+   "options": "Office",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2024-02-06 07:29:20.522090",
+ "modified": "2024-02-07 00:06:24.226648",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Account",
+ "naming_rule": "Expression (old style)",
  "nsm_parent_field": "parent_account",
  "owner": "Administrator",
  "permissions": [

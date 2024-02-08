@@ -14,7 +14,8 @@
   "column_break_outka",
   "isbn",
   "release_year",
-  "naming_series"
+  "naming_series",
+  "rent_per_month"
  ],
  "fields": [
   {
@@ -53,11 +54,16 @@
    "fieldname": "is_stock_item",
    "fieldtype": "Check",
    "label": "Is Stock Item"
+  },
+  {
+   "fieldname": "rent_per_month",
+   "fieldtype": "Currency",
+   "label": "Rent Per Month"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 08:29:23.659315",
+ "modified": "2024-02-07 03:16:55.138244",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Item",

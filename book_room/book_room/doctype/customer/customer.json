@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:customer_name",
  "creation": "2024-02-06 08:28:45.734825",
  "default_view": "List",
  "doctype": "DocType",
@@ -15,7 +16,8 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "label": "Customer Name",
+   "unique": 1
   },
   {
    "fieldname": "email",
@@ -30,10 +32,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 08:28:45.734825",
+ "modified": "2024-02-07 21:19:13.030610",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Customer",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -14,8 +14,7 @@
   "column_break_ooqkm",
   "voucher_type",
   "voucher_no",
-  "qty_change",
-  "qty_after_transaction"
+  "qty_change"
  ],
  "fields": [
   {
@@ -50,11 +49,6 @@
    "label": "Qty Change"
   },
   {
-   "fieldname": "qty_after_transaction",
-   "fieldtype": "Float",
-   "label": "Qty After Transaction"
-  },
-  {
    "fieldname": "voucher_no",
    "fieldtype": "Dynamic Link",
    "label": "Voucher No",
@@ -67,12 +61,13 @@
    "options": "Item"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 08:26:07.759889",
+ "modified": "2024-02-07 02:32:23.581599",
  "modified_by": "Administrator",
  "module": "Book Room",
- "name": "Book Ledger",
+ "name": "Stock Ledger",
  "owner": "Administrator",
  "permissions": [
   {

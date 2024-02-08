@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-07 04:09:33.665985",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "office",
+  "customer",
+  "column_break_ebybr",
+  "posting_date",
+  "section_break_wmuuq",
+  "issue_book_items",
+  "section_break_wgvin",
+  "total_qty",
+  "grand_total",
+  "outstanding_amount",
+  "column_break_uo5ll",
+  "returned_qty",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ebybr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_book_items",
+   "fieldtype": "Table",
+   "label": "Issue Book Items",
+   "options": "Issue Book Items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wmuuq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wgvin",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Issue Book",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Office",
+   "options": "Office",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_qty",
+   "fieldtype": "Int",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uo5ll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "returned_qty",
+   "fieldtype": "Int",
+   "label": "Returned Qty",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-08 04:15:30.797761",
+ "modified_by": "Administrator",
+ "module": "Book Room",
+ "name": "Issue Book",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
