@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-09 21:30:36.501012",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "column_break_z4ukc",
+  "authors",
+  "section_break_tyolp",
+  "import_from_frappe_items",
+  "next"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_z4ukc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Data",
+   "label": "Authors"
+  },
+  {
+   "fieldname": "section_break_tyolp",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "import_from_frappe_items",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Import From Frappe Items",
+   "options": "Import From Frappe Items"
+  },
+  {
+   "fieldname": "next",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Next"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-10 01:46:31.305206",
+ "modified_by": "Administrator",
+ "module": "Book Room",
+ "name": "Import From Frappe",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -8,6 +8,14 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+fixtures = [
+    {"dt": "Account"},
+    {"dt": "Office"},
+    {"dt": "Shelf"},
+    {"dt": "Customer"},
+    {"dt": "Book Room Settings"}
+]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/book_room/css/book_room.css"
 # app_include_js = "/assets/book_room/js/book_room.js"

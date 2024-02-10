@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-10 04:50:46.175204",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "minimum_number_of_books_import",
+  "maximum_number_of_books_import"
+ ],
+ "fields": [
+  {
+   "fieldname": "minimum_number_of_books_import",
+   "fieldtype": "Int",
+   "label": "Minimum Number Of Books Import"
+  },
+  {
+   "fieldname": "maximum_number_of_books_import",
+   "fieldtype": "Int",
+   "label": "Maximum Number Of Books Import"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-10 04:50:46.175204",
+ "modified_by": "Administrator",
+ "module": "Book Room",
+ "name": "Book Room Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

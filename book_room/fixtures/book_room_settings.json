@@ -1,0 +1,10 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Book Room Settings",
+  "maximum_number_of_books_import": 30,
+  "minimum_number_of_books_import": 20,
+  "modified": "2024-02-10 04:50:55.765956",
+  "name": "Book Room Settings"
+ }
+]

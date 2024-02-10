@@ -16,32 +16,39 @@
   {
    "fieldname": "actual_qty",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Actual Qty",
    "read_only": 1
   },
   {
    "fieldname": "available_qty",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Available Qty",
    "read_only": 1
   },
   {
    "fieldname": "item",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Item",
    "read_only": 1
   },
   {
    "fieldname": "shelf",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Shelf",
-   "options": "Shelf"
+   "options": "Shelf",
+   "read_only": 1
   }
  ],
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-07 02:32:36.147088",
+ "modified": "2024-02-09 20:47:59.519782",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Store",

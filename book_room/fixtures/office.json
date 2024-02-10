@@ -1,0 +1,14 @@
+[
+ {
+  "customer_credit_limit": 500.0,
+  "default_bank_account": "Bank Account",
+  "default_payable_account": "Trade Payable",
+  "default_recievable_account": "Trade Receivable",
+  "default_selling_account": "Revenue Account",
+  "docstatus": 0,
+  "doctype": "Office",
+  "modified": "2024-02-09 02:35:26.234997",
+  "name": "Office 1",
+  "office_name": "Office 1"
+ }
+]

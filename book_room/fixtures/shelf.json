@@ -1,0 +1,35 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Shelf",
+  "is_group": 1,
+  "modified": "2024-02-07 00:35:06.635750",
+  "name": "All Shelf",
+  "office": "Office 1",
+  "old_parent": "",
+  "parent_shelf": null,
+  "shelf_name": "All Shelf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Shelf",
+  "is_group": 1,
+  "modified": "2024-02-07 00:35:36.964189",
+  "name": "Rak 1",
+  "office": "Office 1",
+  "old_parent": "All Shelf",
+  "parent_shelf": "All Shelf",
+  "shelf_name": "Rak 1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Shelf",
+  "is_group": 0,
+  "modified": "2024-02-07 00:35:50.431154",
+  "name": "Shelf 1",
+  "office": "Office 1",
+  "old_parent": "Rak 1",
+  "parent_shelf": "Rak 1",
+  "shelf_name": "Shelf 1"
+ }
+]

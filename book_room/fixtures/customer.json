@@ -1,0 +1,20 @@
+[
+ {
+  "customer_name": "Customer1",
+  "docstatus": 0,
+  "doctype": "Customer",
+  "email": "test@example.com",
+  "modified": "2024-02-07 21:19:49.189492",
+  "name": "Customer1",
+  "phone": "78569"
+ },
+ {
+  "customer_name": "Customer2",
+  "docstatus": 0,
+  "doctype": "Customer",
+  "email": "test2@example.com",
+  "modified": "2024-02-09 11:27:35.723441",
+  "name": "Customer2",
+  "phone": "9567014289"
+ }
+]

@@ -8,26 +8,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "item_name",
-  "author",
+  "title",
+  "authors",
   "is_stock_item",
   "column_break_outka",
   "isbn",
   "release_year",
   "naming_series",
-  "rent_per_month"
+  "rent_per_month",
+  "average_rating",
+  "frappe_book_id"
  ],
  "fields": [
-  {
-   "fieldname": "item_name",
-   "fieldtype": "Data",
-   "label": "Item Name"
-  },
-  {
-   "fieldname": "author",
-   "fieldtype": "Data",
-   "label": "Author"
-  },
   {
    "fieldname": "column_break_outka",
    "fieldtype": "Column Break"
@@ -59,11 +51,32 @@
    "fieldname": "rent_per_month",
    "fieldtype": "Currency",
    "label": "Rent Per Month"
+  },
+  {
+   "fieldname": "average_rating",
+   "fieldtype": "Float",
+   "label": "Average Rating"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Data",
+   "label": "Authors"
+  },
+  {
+   "fieldname": "frappe_book_id",
+   "fieldtype": "Data",
+   "label": "Frappe Book ID",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-08 21:46:10.363681",
+ "modified": "2024-02-10 01:41:12.945197",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Item",
@@ -83,7 +96,7 @@
    "write": 1
   }
  ],
- "search_fields": "item_name",
+ "search_fields": "title",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
