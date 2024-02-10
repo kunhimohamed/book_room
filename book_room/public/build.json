@@ -1,0 +1,8 @@
+{
+    "js/book_room_customization.js": [
+        "public/js/frappe/ui/page.html",
+        "public/js/frappe/ui/page.js",
+        "public/frappe/form/form.js",
+        "public/frappe/list/list_sidebar.js"
+    ]
+}

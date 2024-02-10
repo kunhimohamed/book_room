@@ -11,6 +11,7 @@
   "office_name",
   "default_recievable_account",
   "default_payable_account",
+  "default_bank_account",
   "column_break_nex7j",
   "default_selling_account",
   "customer_credit_limit"
@@ -48,11 +49,17 @@
    "fieldname": "customer_credit_limit",
    "fieldtype": "Currency",
    "label": "Customer Credit Limit"
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Default Bank Account",
+   "options": "Account"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-07 23:35:07.828336",
+ "modified": "2024-02-09 02:35:17.133109",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Office",

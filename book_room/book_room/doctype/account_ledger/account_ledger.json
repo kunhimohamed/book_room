@@ -1,6 +1,4 @@
 {
- "_comments": "[]",
- "_liked_by": "[]",
  "actions": [],
  "allow_rename": 1,
  "creation": "2024-02-06 07:19:59.163806",
@@ -18,7 +16,9 @@
   "debit_amount",
   "credit_amount",
   "voucher_type",
-  "voucher_no"
+  "voucher_no",
+  "against_voucher_type",
+  "against_voucher_no"
  ],
  "fields": [
   {
@@ -74,11 +74,25 @@
    "fieldtype": "Dynamic Link",
    "label": "Voucher No",
    "options": "voucher_type"
+  },
+  {
+   "fieldname": "against_voucher_type",
+   "fieldtype": "Link",
+   "label": "Against Voucher Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "against_voucher_no",
+   "fieldtype": "Dynamic Link",
+   "label": "Against Voucher No",
+   "options": "against_voucher_type"
   }
  ],
+ "hide_toolbar": 1,
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 07:57:55.812749",
+ "modified": "2024-02-09 05:09:22.472107",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Account Ledger",

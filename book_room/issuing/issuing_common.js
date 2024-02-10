@@ -1,7 +1,7 @@
 
 
 frappe.provide("book_room.issuing");
-book_room.issuing.IssueController = class IssueController extends frappe.ui.form.Controller {
+book_room.issuing.IssueController = class IssueController {
 	item(doc, cdt, cdn) {
 		let re_doc = frappe.get_doc(cdt, cdn);
 		frappe.db.get_value('Item', re_doc.item, 'rent_per_month')
@@ -44,5 +44,18 @@ book_room.issuing.IssueController = class IssueController extends frappe.ui.form
 		this.frm.refresh_field("issue_book_items");
 		this.calculate_total_qty(doc);
 		this.calculate_grand_total(doc);
+	}
+
+	paid_amount(doc, cdt, cdn){
+		this.calculate_total_paid_amount(doc);
+	}
+
+	calculate_total_paid_amount(doc){
+		let total_paid_amount = 0;
+		$.each(doc.record_payment_references || [], function(i, row) {
+			total_paid_amount += row.paid_amount;
+		})
+		this.frm.set_value("total_paid_amount", total_paid_amount);
+		this.frm.refresh_field("total_paid_amount");
 	}
 }

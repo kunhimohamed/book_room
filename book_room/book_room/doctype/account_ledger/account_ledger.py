@@ -7,7 +7,7 @@ from frappe.model.document import Document
 class AccountLedger(Document):
 	@staticmethod
 	def make_gl_entries(account, party_type, party, debit_amount, credit_amount,
-					  voucher_type, voucher_no, is_cancelled):
+					  voucher_type, voucher_no, against_voucher_type=None, against_voucher_no=None, is_cancelled=None):
 		if not is_cancelled:
 			gl = frappe.new_doc("Account Ledger")
 			gl.account = account
@@ -19,6 +19,8 @@ class AccountLedger(Document):
 			gl.credit_amount = credit_amount
 			gl.voucher_type = voucher_type
 			gl.voucher_no = voucher_no
+			gl.against_voucher_type = against_voucher_type
+			gl.against_voucher_no = against_voucher_no
 			gl.save(ignore_permissions = True)
 		else:
 			AccountLedger.delete_gl_entries(voucher_type, voucher_no)

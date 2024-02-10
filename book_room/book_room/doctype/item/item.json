@@ -63,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-07 03:16:55.138244",
+ "modified": "2024-02-08 21:46:10.363681",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Item",
@@ -83,6 +83,7 @@
    "write": 1
   }
  ],
+ "search_fields": "item_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
