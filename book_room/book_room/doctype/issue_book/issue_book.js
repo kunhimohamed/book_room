@@ -6,6 +6,15 @@
 extend_cscript(cur_frm.cscript, new book_room.issuing.IssueController({frm: cur_frm}));
 
 frappe.ui.form.on("Issue Book", {
+    setup(frm){
+		frm.set_query("shelf", "issue_book_items", function(doc) {
+			return {
+				filters: {
+					'is_group': 0
+				}
+			}
+		});
+	},
     refresh: function(frm){
         // to handle the amend and duplicate forms.
         if(frm.doc.__islocal){

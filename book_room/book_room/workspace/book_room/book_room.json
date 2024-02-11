@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jjkAmvHClq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Book Room</span>\",\"col\":12}},{\"id\":\"yXpBMiDVCN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"RrH91VSLiw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Outstatnding\",\"col\":3}},{\"id\":\"BCY-omkHCv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Store\",\"col\":3}},{\"id\":\"_KyZkkQrzS\",\"type\":\"card\",\"data\":{\"card_name\":\"Issue Book\",\"col\":4}}]",
+ "content": "[{\"id\":\"jjkAmvHClq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Book Room</span>\",\"col\":12}},{\"id\":\"qQk3eFGpw9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue Book\",\"col\":3}},{\"id\":\"BCY-omkHCv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Store\",\"col\":3}},{\"id\":\"lUFRmA8cvG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Update\",\"col\":3}},{\"id\":\"pJqZzKyqcQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Import From Frappe\",\"col\":3}},{\"id\":\"yXpBMiDVCN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"12Ia0-hKdN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NVXcXPjq-L\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Report</b></span>\",\"col\":12}},{\"id\":\"UCFcvSD93l\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Outstanding\",\"col\":4}}]",
  "creation": "2024-02-09 20:34:44.063877",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Issue Book",
+   "label": "Customer Outstanding",
    "link_count": 1,
    "link_type": "DocType",
    "onboard": 0,
@@ -23,16 +23,16 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
-   "label": "Issue Book",
+   "is_query_report": 1,
+   "label": "Customer Outstanding",
    "link_count": 0,
-   "link_to": "Issue Book",
-   "link_type": "DocType",
+   "link_to": "Customer Outstanding",
+   "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2024-02-09 20:50:30.720160",
+ "modified": "2024-02-10 23:24:45.100991",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Book Room",
@@ -47,6 +47,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Issue Book",
+   "link_to": "Issue Book",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Customer",
    "link_to": "Customer",
    "stats_filter": "[]",
@@ -55,15 +63,23 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Customer Outstatnding",
-   "link_to": "Customer Outstanding",
-   "type": "Report"
+   "label": "Store",
+   "link_to": "Store",
+   "stats_filter": "[]",
+   "type": "DocType"
   },
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Store",
-   "link_to": "Store",
+   "label": "Import From Frappe",
+   "link_to": "Import From Frappe",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Update",
+   "link_to": "Stock Update",
    "stats_filter": "[]",
    "type": "DocType"
   }

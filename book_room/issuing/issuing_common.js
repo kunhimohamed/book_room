@@ -2,15 +2,7 @@
 
 frappe.provide("book_room.issuing");
 book_room.issuing.IssueController = class IssueController {
-	setup(doc){
-		this.frm.set_query("shelf", "issue_book_items", function(doc) {
-			return {
-				filters: {
-					'is_group': 0
-				}
-			}
-		});
-	}
+
 	item(doc, cdt, cdn) {
 		let re_doc = frappe.get_doc(cdt, cdn);
 		frappe.db.get_value('Item', re_doc.item, 'rent_per_month')
@@ -20,9 +12,11 @@ book_room.issuing.IssueController = class IssueController {
 			this.frm.refresh_field("issue_book_items");
         })
 	}
+
 	months(doc, cdt, cdn){
 		this.calculate_amount(doc, cdt, cdn);
 	}
+	
 	qty(doc, cdt, cdn){
 		this.calculate_amount(doc, cdt, cdn);
 	}
