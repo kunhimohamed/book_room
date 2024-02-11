@@ -13,7 +13,7 @@ Library Management System
 
 #### Video
 
-[![Watch the video](https://i.imgur.com/A6GPFBU_d.webp)](https://drive.google.com/file/d/1E6fjB97mCxGF4US6j9K_elFJkZRQl1hp/view?usp=drive_link)
+https://github.com/kunhimohamed/book_room/assets/13074229/998fcfa9-4538-4bee-8f97-df2603e4c79f
 
 #### License
 
