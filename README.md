@@ -13,7 +13,7 @@ Library Management System
 
 #### Video
 
-[![Watch the video]()](https://drive.google.com/file/d/1E6fjB97mCxGF4US6j9K_elFJkZRQl1hp/view?usp=drive_link)
+[![Watch the video](https://i.imgur.com/A6GPFBU_d.webp)](https://drive.google.com/file/d/1E6fjB97mCxGF4US6j9K_elFJkZRQl1hp/view?usp=drive_link)
 
 #### License
 
