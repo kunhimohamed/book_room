@@ -50,13 +50,20 @@ book_room.issuing.IssueController = class IssueController {
 	}
 
 	paid_amount(doc, cdt, cdn){
-		this.calculate_total_paid_amount(doc);
+		this.calculate_total_paid_amount(doc, cdt, cdn);
 	}
 
-	calculate_total_paid_amount(doc){
+	calculate_total_paid_amount(doc, cdt, cdn){
 		let total_paid_amount = 0;
 		$.each(doc.record_payment_references || [], function(i, row) {
-			total_paid_amount += row.paid_amount;
+			if(row.paid_amount>row.outstanding_amount){
+				let re_doc = frappe.get_doc(cdt, cdn);
+				frappe.model.set_value(re_doc.doctype, re_doc.name, "paid_amount", null);
+				frappe.throw("Paid amount can not be greater than the outstanding amount")
+			}
+			else{
+				total_paid_amount += row.paid_amount;
+			}
 		})
 		this.frm.set_value("total_paid_amount", total_paid_amount);
 		this.frm.refresh_field("total_paid_amount");

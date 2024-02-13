@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jjkAmvHClq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Book Room</span>\",\"col\":12}},{\"id\":\"qQk3eFGpw9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue Book\",\"col\":3}},{\"id\":\"BCY-omkHCv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Store\",\"col\":3}},{\"id\":\"lUFRmA8cvG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Update\",\"col\":3}},{\"id\":\"pJqZzKyqcQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Import From Frappe\",\"col\":3}},{\"id\":\"yXpBMiDVCN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"12Ia0-hKdN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NVXcXPjq-L\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Report</b></span>\",\"col\":12}},{\"id\":\"UCFcvSD93l\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Outstanding\",\"col\":4}}]",
+ "content": "[{\"id\":\"jjkAmvHClq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Book Room</span>\",\"col\":12}},{\"id\":\"Fz4HUMbG0P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Books\",\"col\":3}},{\"id\":\"qQk3eFGpw9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue Book\",\"col\":3}},{\"id\":\"BCY-omkHCv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Store\",\"col\":3}},{\"id\":\"lUFRmA8cvG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Update\",\"col\":3}},{\"id\":\"pJqZzKyqcQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Import From Frappe\",\"col\":3}},{\"id\":\"yXpBMiDVCN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"12Ia0-hKdN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NVXcXPjq-L\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Report</b></span>\",\"col\":12}},{\"id\":\"UCFcvSD93l\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Outstanding\",\"col\":4}}]",
  "creation": "2024-02-09 20:34:44.063877",
  "custom_blocks": [],
  "docstatus": 0,
@@ -32,7 +32,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-10 23:24:45.100991",
+ "modified": "2024-02-13 06:07:44.371879",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Book Room",
@@ -57,6 +57,14 @@
    "doc_view": "List",
    "label": "Customer",
    "link_to": "Customer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Books",
+   "link_to": "Item",
    "stats_filter": "[]",
    "type": "DocType"
   },

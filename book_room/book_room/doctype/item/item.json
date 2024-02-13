@@ -27,6 +27,8 @@
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "ISBN"
   },
   {
@@ -55,11 +57,15 @@
   {
    "fieldname": "average_rating",
    "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Average Rating"
   },
   {
    "fieldname": "title",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Title"
   },
   {
@@ -76,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-10 01:41:12.945197",
+ "modified": "2024-02-13 06:06:33.706632",
  "modified_by": "Administrator",
  "module": "Book Room",
  "name": "Item",
